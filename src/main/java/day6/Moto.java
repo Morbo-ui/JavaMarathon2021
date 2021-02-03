@@ -6,11 +6,11 @@ public class Moto {
     private String color;
     private String model;
 
-  public Moto(int year, String model, String color){
-      this.year = year;
-      this.model = model;
-      this.color = color;
-  }
+    public Moto(int year, String model, String color) {
+        this.year = year;
+        this.model = model;
+        this.color = color;
+    }
 
     public int getYear() {
         return year;
