@@ -6,13 +6,10 @@ public class Task1 {
         car.setColor("yellow");
         car.setModel("Buggati");
         car.setYear(1984);
-        car.info();
         System.out.println(car.yearDifference(2020));
-        Moto moto = new Moto();
-        moto.setModel("Ducati");
-        moto.setColor("Pink");
-        moto.setYear(1999);
+        Moto moto = new Moto(1999, "Harley-Davidson", "red");
+        Airplane airplane = new Airplane("Cessna",1945, 210, 1000);
         moto.info();
-        System.out.println(moto.yearDifference(2021));
+        car.info();
     }
 }

@@ -6,17 +6,11 @@ public class Moto {
     private String color;
     private String model;
 
-    public void setYear(int year) {
-        this.year = year;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
+  public Moto(int year, String model, String color){
+      this.year = year;
+      this.model = model;
+      this.color = color;
+  }
 
     public int getYear() {
         return year;
@@ -32,9 +26,5 @@ public class Moto {
 
     void info() {
         System.out.println("Это мотоцикл");
-    }
-
-    public int yearDifference(int inputYear) {
-        return Math.abs(inputYear - year);
     }
 }
