@@ -13,11 +13,12 @@ public class Triangle extends Figure {
     }
     @Override
     public double area() {
-        return ((length1 + length2 + length3)/2);
+        double halfP = perimeter() /2;
+        return Math.sqrt(halfP * (halfP - length1) * (halfP - length2) * (halfP - length3));
     }
 
     @Override
     public double perimeter() {
-        return (length1 + length2 + length3);
+        return length1 + length2 + length3;
     }
 }
