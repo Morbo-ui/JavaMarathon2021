@@ -29,10 +29,10 @@ public class Teacher {
                 evaluation = "Отлично";
                 break;
         }
-        System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() + " по предмету " + this.subject + " на оценку " + evaluation);
+        System.out.println("Преподаватель " + this.name + " оценил студента с именем " +
+                student.getName() + " по предмету " + this.subject + " на оценку " + evaluation);
 
     }
-
 
     public String getName() {
         return name;
