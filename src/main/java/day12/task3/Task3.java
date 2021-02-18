@@ -34,9 +34,11 @@ public class Task3 {
         Collections.shuffle(musicBands);
         System.out.println(musicBands);
 
-          List<>
-    }
-    public static List<MusicBand> groupsAfter2000(List<MusicBand>bands){
-        if ()
+          List<MusicBand>groupsAfter2000 = new ArrayList<>();
+          for (MusicBand band: musicBands ){
+              if (band.getYear() > 2000)
+                  groupsAfter2000.add(band);
+          }
+        System.out.println(groupsAfter2000);
     }
 }
