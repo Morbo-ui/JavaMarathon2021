@@ -1,14 +1,35 @@
 package day12.task3;
 
 public class MusicBand {
-    private int name;
+    private String name;
     private int year;
 
-    public MusicBand(int name, int year) {
+    public MusicBand(String name, int year) {
         this.name = name;
         this.year = year;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
     public int getYear() {
         return year;
+    }
+
+    @Override
+    public String toString() {
+        return "MusicBand{" +
+                "name='" + name + '\'' +
+                ", year=" + year +
+                '}';
     }
 }
